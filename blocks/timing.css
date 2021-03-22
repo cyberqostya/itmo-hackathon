@@ -1,0 +1,96 @@
+.timing {
+  position: relative;
+  padding: 0 2.5em;
+
+  background-color: #2E2FB2;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+
+
+.timing__image-container {
+  position: relative;
+  bottom: 0;
+  left: -4.5em;
+
+  width: 42%;
+}
+
+
+.timing__image {
+  width: 100%;
+
+  position: relative;
+  z-index: 1;
+}
+
+
+.timing__image-square {
+  position: absolute;
+  top: -5%;
+  right: -5%;
+
+  fill: none;
+  stroke-dasharray: 0.5em,1em,0.5em, 3em, 3em, 3em, 3em,1em,3em, 3em, 3em,1em,3em,1em,3em, 3em;
+  animation: square-rotate 400s linear infinite;
+
+  width: 110%;
+  height: 110%;
+}
+.timing__image-square rect {
+  x: 0.125em;
+  y: 0.125em;
+  stroke: #fff;
+  stroke-width: 0.25em;
+  width: calc(100% - 0.25em);
+  height: calc(100% - 0.5em);
+}
+@keyframes square-rotate {
+  0% { stroke-dashoffset: 20000; transform: rotate(0); }
+  50% { transform: rotate(7deg); }
+  100% { stroke-dashoffset: 0; transform: rotate(0); }
+}
+
+
+.timing__text-container {
+  width: 60%;
+
+  position: relative;
+  z-index: 1;
+}
+
+
+.timing__title {
+  text-align: right;
+}
+
+
+.timing__text {
+  margin-top: 1em;
+
+  text-align: right;
+}
+
+
+.timing__style-square {
+  width: 12.5em;
+  height: 12.5em;
+  
+  position: absolute;
+  right: -2em;
+  bottom: 5em;
+
+  background-color: #F21F5B;
+
+  animation: mini-square-rotate 50s infinite linear;
+}
+@keyframes mini-square-rotate {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(-360deg); }
+}

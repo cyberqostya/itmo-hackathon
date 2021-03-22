@@ -1,0 +1,33 @@
+.participation {
+  padding: 0 2.5em;
+
+  background-image: url(../vendor/images/participant__background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+.participation__text-container {
+  width: 55%;
+}
+
+
+.participation__list, .participation__additional-list {
+  list-style-position: inside;
+}
+
+
+.participation__text, .participation__list-item, .participation__additional-list {
+  margin-top: 1em;
+}
+
+
+.participation__additional-list {
+  margin-left: 1em;
+}

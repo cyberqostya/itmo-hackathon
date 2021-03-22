@@ -1,0 +1,96 @@
+.about {
+  padding: 0 2.5em;
+
+  position: relative;
+
+  min-height: 100vh;
+
+  background-color: #2E2FB2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.about__image-container {
+  position: relative;
+  top: 0;
+  left: -4.5em;
+
+  width: 42%;
+}
+
+
+.about__image {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+
+.about__image-circle {
+  position: absolute;
+  top: -4.52%;
+  left: -4%;
+
+  width: 108%;
+  height: 108%;
+
+  fill: none;
+
+  animation: circle-rotate 15s infinite linear;
+}
+.about__image-circle circle {
+
+  stroke: #fff;
+  stroke-width: 0.25em;
+  stroke-linecap: round;
+  stroke-dasharray: 0.5em,1em,0.5em, 3em, 3em, 3em, 3em,1em,3em, 3em, 3em,1em,3em,1em,3em, 6em;
+}
+@keyframes circle-rotate {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.about__text-container {
+  width: 60%;
+
+  position: relative;
+  z-index: 1;
+}
+
+
+.about__title {
+  text-align: right;
+}
+
+
+.about__text {
+  margin-top: 1em;
+
+  text-align: right;
+}
+
+
+.about__style-circle {
+  width: 12.5em;
+  height: 12.5em;
+  border-radius: 50%;
+  
+  position: absolute;
+  right: -2em;
+  top: 5em;
+
+  background-color: #F21F5B;
+
+  animation: heart 4s infinite ease;
+}
+@keyframes heart {
+  0% { transform: scale(1); }
+  10% { transform: scale(1.05); }
+  20% { transform: scale(1); }
+  30% { transform: scale(1.05); }
+  40% { transform: scale(1); }
+}

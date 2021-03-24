@@ -21,6 +21,22 @@
 }
 
 
+.header__logo-link {
+  
+}
+
+
 .header__logo {
+  vertical-align: middle;
   height: 1.5em;
+}
+
+
+.header__list-item {
+  cursor: pointer;
+
+  transition: color .3s;
+}
+.header__list-item:hover {
+  color: #F21F5B;
 }

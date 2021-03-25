@@ -1,8 +1,6 @@
 .participation {
   position: relative;
 
-  padding: 0 2.5em;
-
   justify-content: flex-start;
 }
 
@@ -52,4 +50,17 @@
 }
 @keyframes participation-square-rotate {
   100% { transform: rotate(360deg); }
+}
+
+
+@media screen and (max-width: 768px) {
+  .participation {
+    justify-content: center;
+  }
+  .participation__text-container {
+    width: auto;
+  }
+  .participation__button, .participation__style-square {
+    display: none;
+  }
 }

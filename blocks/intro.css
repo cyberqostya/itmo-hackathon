@@ -34,3 +34,20 @@
 .intro__button {
   margin-top: 4em;
 }
+
+
+@media screen and (max-width: 768px) {
+  .intro__container{
+    margin: 10em 0 8em 0;
+    top: 0;
+  }
+  .intro__title {
+    font-size: 3em;
+  }
+  .intro__text {
+    width: auto;
+  }
+  .intro__button {
+    display: none;
+  }
+}

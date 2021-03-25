@@ -42,3 +42,13 @@
 .header__list-item:hover {
   color: #F21F5B;
 }
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: center;
+  }
+  .header__nav {
+    display: none;
+  }
+}

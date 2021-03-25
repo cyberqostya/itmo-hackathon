@@ -1,13 +1,27 @@
+// Объявление элементов блоков
+
+  // Хедер
 const headerBlock = document.querySelector('.header');
 const headerNav = headerBlock.querySelector('.header__nav');
 
-const aboutBlock = document.querySelector('.about');
-const participationBlock = document.querySelector('.participation');
-const timingBlock = document.querySelector('.timing');
-
+// Intro
 const introBlock = document.querySelector('.intro');
 const introButton = introBlock.querySelector('.intro__button');
 
+// About
+const aboutBlock = document.querySelector('.about');
+const aboutButton = aboutBlock.querySelector('.about__button');
+
+// Participation
+const participationBlock = document.querySelector('.participation');
+const participationButton = participationBlock.querySelector('.participation__button');
+
+// Timing
+const timingBlock = document.querySelector('.timing');
+const timingButton = timingBlock.querySelector('.timing__button');
+
+
+// Функция скролла к верху элемента 
 function scrollTo(element) {
   element.scrollIntoView({ behavior: 'smooth' });
 }
@@ -24,6 +38,6 @@ headerNav.addEventListener('click', (e) => {
   }
 });
 
-introButton.addEventListener('click', () => {
-  scrollTo(aboutBlock);
-});
+introButton.addEventListener('click', () => { scrollTo(aboutBlock); });
+aboutButton.addEventListener('click', () => { scrollTo(participationBlock); });
+participationButton.addEventListener('click', () => { scrollTo(timingBlock); });

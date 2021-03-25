@@ -1,15 +1,7 @@
 .about {
-  padding: 0 2.5em;
-
   position: relative;
 
-  min-height: 100vh;
-
-  background-color: #2E2FB2;
-
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 
@@ -55,10 +47,10 @@
 
 
 .about__text-container {
-  width: 60%;
+  width: 55%;
 
   position: relative;
-  z-index: 1;
+  z-index: 4;
 }
 
 
@@ -68,29 +60,19 @@
 
 
 .about__text {
-  margin-top: 1em;
+  margin-top: 0.5em;
+  padding: 0.5em;
 
-  text-align: right;
+  text-align: justify;
+  text-align-last: right;
+
+  background-color: #2E2FB2;
+  border-radius: 1em;
 }
 
 
-.about__style-circle {
-  width: 12.5em;
-  height: 12.5em;
-  border-radius: 50%;
-  
+.about__button {
   position: absolute;
-  right: -2em;
-  top: 5em;
-
-  background-color: #F21F5B;
-
-  animation: heart 4s infinite ease;
-}
-@keyframes heart {
-  0% { transform: scale(1); }
-  10% { transform: scale(1.05); }
-  20% { transform: scale(1); }
-  30% { transform: scale(1.05); }
-  40% { transform: scale(1); }
+  left: calc(50% - 3.2em);
+  bottom: 3em;
 }

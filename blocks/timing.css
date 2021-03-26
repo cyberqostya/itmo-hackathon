@@ -18,7 +18,6 @@
   width: 100%;
 
   position: relative;
-  z-index: 1;
 }
 
 
@@ -28,7 +27,7 @@
   right: -5%;
 
   fill: none;
-  stroke-dasharray: 3.84%,3.84%,3.84%, 7.69%, 7.69%, 7.69%, 7.69%,3.84%,7.69%, 7.69%, 7.69%,3.84%,7.69%,3.84%,7.69%, 7.69%;
+  stroke-dasharray: 2.272%,2.272%,2.272%, 4.545%, 9.091%, 4.545%, 9.091%,2.272%,9.091%, 4.545%, 9.091%,2.272%,9.091%,2.272%,9.091%, 18.182%;
   animation: square-rotate 60s linear infinite;
 
   width: 110%;
@@ -54,7 +53,8 @@
   width: 60%;
 
   position: relative;
-  z-index: 1;
+
+  z-index: 2;
 }
 
 
@@ -78,7 +78,6 @@
   position: absolute;
   left: calc(50% - 4.5em);
   bottom: 2.5em;
-  z-index: 3;
 }
 
 

@@ -9,7 +9,7 @@
   width: 55%;
 
   position: relative;
-  z-index: 4;
+  z-index: 2;
 }
 
 
@@ -42,9 +42,10 @@
   position: absolute;
   right: -10em;
   top: -4em;
-  z-index: 2;
 
   border: 2.5em solid #f21f5b;
+
+  z-index: 1;
 
   animation: participation-square-rotate 60s infinite linear;
 }

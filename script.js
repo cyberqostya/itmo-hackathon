@@ -26,6 +26,7 @@ function scrollTo(element) {
   element.scrollIntoView({ behavior: 'smooth' });
 }
 
+
 // Обработчик сравнивает текстконтент элемента, на который нажали, и заголовков блоков страницы
 headerNav.addEventListener('click', (e) => {
   if (e.target.classList.contains('header__list-item')) {
@@ -38,6 +39,47 @@ headerNav.addEventListener('click', (e) => {
   }
 });
 
+// Обработчики на кнопки блоков для скролла
 introButton.addEventListener('click', () => { scrollTo(aboutBlock); });
 aboutButton.addEventListener('click', () => { scrollTo(participationBlock); });
 participationButton.addEventListener('click', () => { scrollTo(timingBlock); });
+
+
+// DVD
+const root = document.querySelector('.root');
+const dvd = root.querySelector('.dvd');
+const FPS = 60;
+
+let xPosition = 1;
+let yPosition = 1;
+let xSpeed = 3;
+let ySpeed = 3;
+
+if (window.innerWidth < 769) {
+  xSpeed = 2;
+  ySpeed = 2;
+}
+
+function update() {
+  dvd.style.left = xPosition + 'px';
+  dvd.style.bottom = yPosition + 'px';
+}
+
+function randomColor() {
+  return ('#' + Math.random().toString(16).slice(2, 8));
+}
+
+setInterval(() => {
+  if(xPosition + dvd.clientWidth >= window.innerWidth || xPosition <= 0) {
+    xSpeed = -xSpeed;
+    dvd.querySelector('path').style.fill = randomColor();
+  }
+  if(yPosition + dvd.clientHeight >= root.clientHeight - headerBlock.clientHeight || yPosition <= 0 ) {
+    ySpeed = -ySpeed;
+    dvd.querySelector('path').style.fill = randomColor();
+  }
+
+  xPosition += xSpeed;
+  yPosition += ySpeed;
+  update();
+}, 1000/FPS);

@@ -8,6 +8,7 @@
 @import url(./blocks/about.css);
 @import url(./blocks/participation.css);
 @import url(./blocks/timing.css);
+@import url(./blocks/popup.css);
 @import url(./blocks/dvd.css);
 
 * {

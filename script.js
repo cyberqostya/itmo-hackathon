@@ -217,7 +217,7 @@ headerNav.addEventListener('click', (e) => {
 introButton.addEventListener('click', () => { scrollTo(aboutBlock); });
 aboutButton.addEventListener('click', () => { scrollTo(participationBlock); });
 participationButton.addEventListener('click', () => { scrollTo(timingBlock); });
-timingBlock.addEventListener('click', () => { openPopup() });
+timingButton.addEventListener('click', () => { openPopup() });
 
 // Обработчик попапа
 popupBlock.addEventListener('mousedown', (event) => {

@@ -9,6 +9,7 @@
   width: 55%;
 
   position: relative;
+  top: -3em;
   z-index: 2;
 }
 
@@ -60,6 +61,7 @@
   }
   .participation__text-container {
     width: auto;
+    top: 0;
   }
   .participation__button, .participation__style-square {
     display: none;

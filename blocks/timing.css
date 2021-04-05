@@ -1,6 +1,5 @@
 .timing {
   position: relative;
-
   justify-content: space-between;
 }
 
@@ -53,6 +52,7 @@
   width: 60%;
 
   position: relative;
+  top: -2.5em;
 
   z-index: 2;
 }
@@ -98,7 +98,7 @@
   }
   .timing__text-container {
     order: 0;
-
+    top: 0;
     width: auto;
   }
   .timing__text {

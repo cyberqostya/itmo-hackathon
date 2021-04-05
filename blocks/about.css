@@ -49,6 +49,7 @@
   width: 55%;
 
   position: relative;
+  top: -2em;;
   z-index: 2;
 }
 
@@ -94,7 +95,7 @@
   }
   .about__text-container {
     order: 0;
-
+    top: 0;
     width: auto;
   }
   .about__text {

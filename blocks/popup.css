@@ -154,3 +154,10 @@
 
   cursor: default;
 }
+
+
+@media screen and (max-width: 768px) {
+  .popup {
+    font-size: 1em;
+  }
+}

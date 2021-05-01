@@ -16,6 +16,9 @@
   font-size: 1em;
   font-weight: 500;
 }
+.header_mini-page {
+  position: relative;
+}
 
 
 .header__nav {
@@ -41,6 +44,10 @@
 }
 .header__list-item:hover {
   color: #F21F5B;
+}
+.header__list-item-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 

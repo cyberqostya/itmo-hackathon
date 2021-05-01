@@ -12,6 +12,8 @@
 @import url(./blocks/popup.css);
 @import url(./blocks/dvd.css);
 
+@import url(./blocks/dell.css);
+
 * {
   margin: 0;
   padding: 0;
